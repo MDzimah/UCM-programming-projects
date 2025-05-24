@@ -1,0 +1,167 @@
+{
+  "events": 
+  [
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j1",
+      	 "coor" : [50,50],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j2",
+      	 "coor" : [50,150],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j3",
+      	 "coor" : [50,250],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j4",
+      	 "coor" : [150,150],
+      	 "ls_strategy" : { "type" : "most_crowded_lss", "data" : {"timeslot" : 1} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j5",
+      	 "coor" : [150,250],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },
+   {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r1",
+           "src"      : "j1",
+           "dest"     : "j4",
+           "length"   : 10000,
+           "co2limit" : 10000,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+    {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r2",
+           "src"      : "j2",
+           "dest"     : "j4",
+           "length"   : 10000,
+           "co2limit" : 10000,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+    {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r3",
+           "src"      : "j3",
+           "dest"     : "j4",
+           "length"   : 10000,
+           "co2limit" : 10000,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+    {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r4",
+           "src"      : "j4",
+           "dest"     : "j5",
+           "length"   : 10000,
+           "co2limit" : 10000,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+   	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v1",
+          "maxspeed"  : 100,
+          "class"     : 0,
+          "itinerary" : ["j1", "j4", "j5"]
+      }
+    },
+   	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v2",
+          "maxspeed"  : 100,
+          "class"     : 0,
+          "itinerary" : ["j1", "j4", "j5"]
+      }
+    },
+  	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v3",
+          "maxspeed"  : 100,
+          "class"     : 0,
+          "itinerary" : ["j1", "j4", "j5"]
+      }
+    },
+   	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v4",
+          "maxspeed"  : 100,
+          "class"     : 0,
+          "itinerary" : ["j2", "j4", "j5"]
+      }
+    },
+  	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v5",
+          "maxspeed"  : 100,
+          "class"     : 0,
+          "itinerary" : ["j2", "j4", "j5"]
+       }
+      },
+  	 {
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v6",
+          "maxspeed"  : 100,
+          "class"     : 0,
+          "itinerary" : ["j3", "j4", "j5"]
+      }
+    }        
+   ]
+}
