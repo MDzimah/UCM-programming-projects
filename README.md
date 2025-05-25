@@ -13,11 +13,11 @@ A text‑based car racing simulator that reads track and surprise definitions fr
 
 A console-based Solitaire game implementation driven by external level configurations. The game logic, board representation, move validation, and rendering are separated into distinct modules. Emphasis is on managing dynamic game state, file‑based input/output, and a clear division between core mechanics and display logic.
 
-### 3. The Lemmings Game (Java)
+### 3. The Lemmings Game (Java) (done equally with [@MarcoRamirezMedina](https://github.com/MarcoRamirezMedina))
 
 An object‑oriented adaptation of the classic Lemmings puzzle. Characters exhibit different behaviors (walking, digging, blocking) in response to game events. The code uses a central event loop to process user actions and environment triggers, with behavior encapsulated in interchangeable components, illustrating clean separation of concerns and extendable design.
 
-### 4. Traffic Simulator (Java)
+### 4. Traffic Simulator (Java) (done equally with [@MarcoRamirezMedina](https://github.com/MarcoRamirezMedina))
 
 A discrete‑event simulation of vehicles moving through configurable road networks. Traffic lights and vehicles react to a shared simulation clock, and events (vehicle arrivals, signal changes) drive the progression. The project demonstrates simulation techniques, modular network construction, and decoupled component interaction.
 
