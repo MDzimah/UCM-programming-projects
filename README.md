@@ -3,7 +3,7 @@
 A showcase of university-level programming mini-projects from Universidad Complutense de Madrid. Each project demonstrates fundamental problem‑solving approaches, language-specific features, and common architectural practices.
 
 
-## 📂 Projects Overview
+## Projects Overview
 
 ### 1. Simulación de Carreras de Coches (C++)
 
